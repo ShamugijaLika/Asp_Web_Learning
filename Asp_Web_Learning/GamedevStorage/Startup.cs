@@ -51,6 +51,9 @@ namespace GamedevStorage
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                //endpoints.MapControllerRoute(
+                //    name: "info",
+                //    pattern: "{controller=Info}/{action=IndexInfo}/{id?}");
             });
         }
     }

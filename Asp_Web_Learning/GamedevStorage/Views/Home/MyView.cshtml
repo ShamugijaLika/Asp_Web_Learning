@@ -7,14 +7,26 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width"/>
-    <title>Index</title>
+    <title>Home</title>
 </head>
 <body>
+    <section>
+        <header>
+            <h1>Первый контрол</h1>
+            <nav>
+                <a asp-action="Index">Home</a>
+                <a asp-controller="Info"
+                   asp-action="IndexInfo">Info</a>
+            </nav>
+        </header>
+        
+    </section>
     <div>
         @ViewBag.Greeting World (from the view)
-        <p>We're going to have an exciting party.<br /> (To do: sell it better. Add pictures or something)
+        <p>
+            We're going to have an exciting party.<br /> (To do: sell it better. Add pictures or something)
         </p>
-        <a asp-action ="RsvpForm">RSVP Now</a>
+        <a asp-action="RsvpForm">RSVP Now</a>
     </div>
 </body>
 </html>

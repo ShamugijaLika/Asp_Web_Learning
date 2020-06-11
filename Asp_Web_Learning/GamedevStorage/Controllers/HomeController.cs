@@ -22,6 +22,12 @@ namespace GamedevStorage.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public ViewResult Info()
+        {
+            return View("Info");
+        }
+
 
         [HttpPost]
         public ViewResult RsvpForm(GuestResponse guestResponse)
