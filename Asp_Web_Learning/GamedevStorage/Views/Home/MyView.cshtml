@@ -6,8 +6,10 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width"/>
+    <meta name="viewport" content="width=device-width" />
     <title>Home</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
 </head>
 <body>
     <section>
@@ -19,14 +21,16 @@
                    asp-action="IndexInfo">Info</a>
             </nav>
         </header>
-        
+
     </section>
     <div>
         @ViewBag.Greeting World (from the view)
-        <p>
-            We're going to have an exciting party.<br /> (To do: sell it better. Add pictures or something)
-        </p>
-        <a asp-action="RsvpForm">RSVP Now</a>
     </div>
+    <div class="text-center">
+        <h3>We`re going to have an exciting party!</h3>
+        <h4>And you are inveted</h4>
+        <a class="btn btn-primary" asp-action="RsvpForm">RSVP Now</a>
+    </div>
+
 </body>
 </html>
